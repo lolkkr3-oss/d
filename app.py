@@ -68,6 +68,5 @@ def redeem_mystrix():
 
 if __name__ == '__main__':
     # รองรับทั้งรันในคอม (Local) และรันบน Render
-    port = int(os.environ.get("PORT", 5000))
-    print(f"--- Server is starting on port {port} ---")
-    app.run(host='0.0.0.0', port=port)
+port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port, debug=False)
